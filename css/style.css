@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    color: white;
+    position:relative;
+    height: 100%;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align:justify;
+    margin-top: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+
+ul{
+    list-style-type: none;
+}
+
+.botton{
+    display: inline-block;
+    padding: 20px;
+    margin-top: 5%;
+}
+.botton{
+    background-color: aliceblue;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    border-bottom: 2px;
+}
+
+li a:hover{
+    background-color: azure;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+header div img {
+    height: 100%;
+    width: 50%;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+
+
+body {
+    background-image: url(../assest/imagenes/Publicidad-para-barberia.jpg);
+}
+
+body h1
+    {
+        color: white;
+        position:relative;
+        height: 100%;
+        font-size: 70px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        margin-top: 300px;
+    }
+
+    section img {
+        position: relative;
+        height: 100%;
+        width: 50%;
+    }
+
+    form div label{
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+
+    h2,h3{
+        text-align: center;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+
+    section iframe{
+        position: relative;
+        margin-left: 500px;
+
+    }
+
+    .apk {
+        position: relative;
+        margin-left: 500px;
+        text-align: center;
+    }
+
+    form div {
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        padding: 10px;
+
+    }
+    
+    footer{
+    color: white;
+    margin-top: 100px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    size: 50px;
+    }
+
+    h4{position: relative;
+    padding: 100px;}
+
+    .botton {
+        background-color: aliceblue;
+        text-decoration: none;
+        padding: 20px;
+        border-radius: 10px;
+        border-style: solid;
+        border-bottom: 2px;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-areas: "servicios      servicios     servicios"
+            "imagen-1       imagen-2      imagen-3"
+            "descripcion-1  descripcion-2 descripcion-3"
+            "publicidad     publicidad    publicidad";
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 20vh 35vh 35vh 20vh;
+        justify-items: center;
+    }
+    
+    h2 {
+        grid-area: servicios;
+        height: 100%;
+        margin-top: 3vh;
+        text-decoration: underline;
+    }
+    
+    .servicios-1 {
+        grid-area: imagen-1;
+        height:300px;
+        width: 300px;
+        align-items: center;
+    }
+    
+    .servicios-2 {
+        grid-area: imagen-2;
+        height: 300px;
+        width: 300px;
+    }
+    
+    .servicios-3 {
+        grid-area: imagen-3;
+        height: 300px;
+        width: 300px;
+    }
+    
+    p {
+        grid-area: descripcion;
+    }
+    
+    .descripcion-1 {
+        grid-area: descripcion-1;
+    }
+    
+    .descripcion-2 {
+        grid-area: descripcion-2;
+    }
+    
+    .descripcion-3 {
+        grid-area: descripcion-3;
+    }
+    
+    .banner{
+        grid-area: publicidad;
+        width: 1000px;
+        height: 200px;
+        border: 3px solid white;
+        position: relative;
+        margin-bottom: 200px;
+    
+    
+        animation-name: banner;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    
+    }
+    
+    @keyframes banner {
+        0%,30%{
+            background-image: url(../assest/imagenes/head\ and\ sholders.jpg);
+        }
+        35%, 65%{
+            background-image: url(../assest/imagenes/mega\ dibu.jpg);
+        }
+        70%, 100%{
+            background-image: url(../assest/imagenes/messi.jpg);
+        }
+        
+    }
+
+    h2 {
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 70px;
+    }
+    section{
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+    }    
+
+    .mb-3{
+        padding-right: 30%;
+        padding-left: 30%;
+    }
+
+    .espacio{
+        padding-top: 100px;
+    }
+    
+    .form-label{
+        color: white;
+    }
+    
+    @media screen and (max-width: 480px){
+        body{
+            background-image: url(../assest/imagenes/background\ negro.jpg);
+        }
+        
+    }
+
+    @media screen and (max-width: 480px){
+        ul{ 
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        }
+        
+    }
+
+    @media screen and (max-width: 480px){
+        .botton{ 
+        width: 80%;
+        border-radius: 1mm;
+        }
+        
+    }
+    @media screen and (max-width: 480px){
+        div img{
+            margin-left: 25%;
+            justify-items: center;;
+        }
+        
+    }
