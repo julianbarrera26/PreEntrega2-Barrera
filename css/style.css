@@ -250,6 +250,15 @@ body h1
     .form-label{
         color: white;
     }
+
+    .carousel-item{
+        height: 800px;
+        width: 800px;
+        position:relative;
+        margin-left: 30%;
+        margin-top: 100px;
+        border-bottom: 5px;
+    }
     
     @media screen and (max-width: 480px){
         body{
