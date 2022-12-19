@@ -317,12 +317,30 @@ section {
 
     @media screen and (max-width: 480px) {
         .botton {
-            width: 80%;
-            border-radius: 1mm;
+            width: 90px ;
+            height: 60px;;
+            border-radius: 2mm;
         }
 
     }
 
+    @media screen and (max-width: 480px) {
+        body h1 {
+        font-size: 50px;
+        text-align: center;
+        }
+
+    }
+
+    @media screen and (max-width: 480px) {
+        section p {
+        font-size: 25px;
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-right: 0;
+        }
+
+    }
     @media screen and (max-width: 480px) {
         div img {
             margin-left: 25%;
