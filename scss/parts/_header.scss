@@ -1,0 +1,155 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+header div img {
+    height: 100%;
+    width: 50%;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+body h1 {
+    color: white;
+    position: relative;
+    height: 100%;
+    font-size: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 300px;
+}
+
+section img {
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+
+form div label {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+section iframe {
+    position: relative;
+    margin-left: 500px;
+
+}
+
+.apk {
+    position: relative;
+    margin-left: 500px;
+    text-align: center;
+}
+
+form div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+footer {
+    color: white;
+    margin-top: 100px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    size: 50px;
+}
+
+h4 {
+    position: relative;
+    padding: 100px;
+}
+
+.botton {
+    background-color: aliceblue;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    border-bottom: 2px;
+}
+
+
+
+
+
+h2 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+}
+
+section {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+.mb-3 {
+    padding-right: 30%;
+    padding-left: 30%;
+}
+
+.espacio {
+    padding-top: 100px;
+}
+
+.form-label {
+    color: white;
+}
+
+.carousel-item {
+    height: 800px;
+    width: 800px;
+    position: relative;
+    margin-left: 30%;
+    margin-top: 100px;
+    border-bottom: 5px;
+}
+
+.Grid__Container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Bottom_Column {
+    grid-column: span 2 / span 2;
+}
+.Bottom_Column {
+    grid-column: span 4;
+}
+
+.redes {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 50px;
+}

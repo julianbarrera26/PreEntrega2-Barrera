@@ -1,0 +1,18 @@
+@keyframes banner {
+
+    0%,
+    30% {
+        background-image: url(../assest/imagenes/head.jpg);
+    }
+
+    35%,
+    65% {
+        background-image: url(../assest/imagenes/megadibu.jpg);
+    }
+
+    70%,
+    100% {
+        background-image: url(../assest/imagenes/messi.jpg);
+    }
+
+}

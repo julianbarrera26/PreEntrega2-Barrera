@@ -1,0 +1,75 @@
+#grid {
+    display: grid;
+    grid-template-areas: "servicios      servicios     servicios"
+        "imagen-1       imagen-2      imagen-3"
+        "descripcion-1  descripcion-2 descripcion-3"
+        "publicidad     publicidad    publicidad";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 20vh 35vh 35vh 20vh;
+    justify-items: center;
+}
+
+h2 {
+    grid-area: servicios;
+    height: 100%;
+    margin-top: 3vh;
+    text-decoration: underline;
+}
+
+.imagen-1 {
+    grid-area: imagen-1;
+    height: 300px;
+    width: 300px;
+    align-items: center;
+}
+
+.imagen-2 {
+    grid-area: imagen-2;
+    height: 300px;
+    width: 300px;
+}
+
+.imagen-3 {
+    grid-area: imagen-3;
+    height: 300px;
+    width: 300px;
+}
+
+p {
+    grid-area: descripcion;
+}
+
+.descripcion-1 {
+    grid-area: descripcion-1;
+    position: relative;
+}
+
+.descripcion-2 {
+    grid-area: descripcion-2;
+    position: relative;
+}
+
+.descripcion-3 {
+    grid-area: descripcion-3;
+
+}
+
+div section{
+    position: relative;
+    margin-top: 100px;
+}
+
+.banner {
+    grid-area: publicidad;
+    width: 70%;
+    height: 200px;
+    border: 3px solid white;
+    position: relative;
+    margin-bottom: 200px;
+
+
+    animation-name: banner;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}

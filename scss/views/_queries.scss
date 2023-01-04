@@ -1,0 +1,101 @@
+@media screen and (max-width: 480px) {
+    body {
+        background-image: url(../assest/imagenes/backgroundnegro.jpg);
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    ul {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .botton {
+        width: 90px;
+        height: 60px;
+        border-radius: 2mm;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    body h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    section p {
+        font-size: 25px;
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    div img {
+        margin-left: 25%;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #grid {
+        display: grid;
+        grid-template-areas: "servicios"
+            "imagen-1 "
+            "descripcion-1"
+            "imagen-2"
+            "descripcion-2"
+            "imagen-3"
+            "descripcion-3"
+            "publicidad";
+        grid-template-columns: 80%;
+        grid-template-rows: 40vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .servicios {
+        margin-left: 25%;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        margin-left: 25%;
+        justify-items: center;
+        image-resolution: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carousel-item {
+    height: 300px;
+    width: 300px;;
+    position: relative;
+    }
+}
+
+@media screen and (max-width: 480px) {
+.carouse-inner{
+    justify-content: center;
+}
+}
+
+@media (min-width: 480px) {
+    .Grid__Container {
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 50px;
+        margin-right: 30px;
+    }
+}
