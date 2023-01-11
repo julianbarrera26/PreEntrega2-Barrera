@@ -1,0 +1,25 @@
+$redes: (
+    rojo: red,
+    azul: blue,
+    naranja: #C25E30
+);
+
+@each $red,
+$color in $redes {
+    .card--#{$red} {
+        display: flex;
+        flex-direction: column;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        flex: 1;
+        padding: 10px;
+        border: 5px solid black;
+        background-color: $color;
+    }
+}
+
+.conteiner-card{
+    display: flex;
+    align-items: inherit;
+}

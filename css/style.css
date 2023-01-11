@@ -33,6 +33,41 @@ body {
 li a:hover {
   background-color: azure; }
 
+.flex-wrap {
+  display: flex;
+  -webkit-align-items: inherit;
+  -ms-flex-align: inherit;
+  align-items: inherit; }
+
+.flex-conteiner {
+  display: flex;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  flex: 1;
+  background: #eee;
+  margin: 10px;
+  padding: 10px; }
+
+p {
+  position: relative; }
+
+.fill {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.boton--descargar {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+  background: #069;
+  padding: 10px;
+  color: #fff; }
+
 p {
   color: white;
   position: relative;
@@ -49,6 +84,43 @@ h3 {
   text-align: center;
   color: white;
   font-family: Arial, Helvetica, sans-serif; }
+
+.card--rojo {
+  display: flex;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  flex: 1;
+  padding: 10px;
+  border: 5px solid black;
+  background-color: red; }
+
+.card--azul {
+  display: flex;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  flex: 1;
+  padding: 10px;
+  border: 5px solid black;
+  background-color: blue; }
+
+.card--naranja {
+  display: flex;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  flex: 1;
+  padding: 10px;
+  border: 5px solid black;
+  background-color: #C25E30; }
+
+.conteiner-card {
+  display: flex;
+  align-items: inherit; }
 
 @media screen and (max-width: 480px) {
   body {

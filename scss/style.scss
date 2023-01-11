@@ -5,9 +5,13 @@
 @import "./component/animation";
 @import "./component/bottons";
 @import "./component/text";
+@import "./component/card";
 @import "./views/_queries.scss";
 @import "./parts/_header";
-@import "./layout/grid";
+@import "./layout/_grid";
+@import "./utilities/variables";
+@import "./utilities/mixins"
+
 
 
 
