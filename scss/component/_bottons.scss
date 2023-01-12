@@ -22,9 +22,8 @@ li a:hover {
 	height:50px;
 	text-align:center;
 	color:black;
-	border: $border;
-    
-    background: $primario;
+	border: solid 2px black;
+    background: blue;
     padding: 10px;
     color: #fff;
 }
