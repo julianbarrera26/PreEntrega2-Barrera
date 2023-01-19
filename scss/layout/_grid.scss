@@ -1,36 +1,38 @@
 #grid {
     display: grid;
     grid-template-areas: "servicios      servicios     servicios"
-        "imagen-1       imagen-2      imagen-3"
-        "descripcion-1  descripcion-2 descripcion-3"
+        "card-fade card-barberia card-platinado"
         "publicidad     publicidad    publicidad";
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 20vh 35vh 35vh 20vh;
+    grid-template-rows: 20vh 70vh 20vh;
     justify-items: center;
 }
 
-h2 {
+.servicios {
     grid-area: servicios;
     height: 100%;
+    width: 100%;
     margin-top: 3vh;
     text-decoration: underline;
 }
 
-.imagen-1 {
-    grid-area: imagen-1;
+.card-fade {
+    grid-area: card-fade;
     height: 300px;
     width: 300px;
     align-items: center;
 }
 
-.imagen-2 {
-    grid-area: imagen-2;
+.card-barberia {
+    grid-area: card-barberia;
     height: 300px;
     width: 300px;
+    align-items: center;
+    justify-content: center;
 }
 
-.imagen-3 {
-    grid-area: imagen-3;
+.card-platinado {
+    grid-area: card-platinado;
     height: 300px;
     width: 300px;
 }
@@ -39,22 +41,8 @@ p {
     grid-area: descripcion;
 }
 
-.descripcion-1 {
-    grid-area: descripcion-1;
-    position: relative;
-}
 
-.descripcion-2 {
-    grid-area: descripcion-2;
-    position: relative;
-}
-
-.descripcion-3 {
-    grid-area: descripcion-3;
-
-}
-
-div section{
+div section {
     position: relative;
     margin-top: 100px;
 }
@@ -66,6 +54,7 @@ div section{
     border: 3px solid white;
     position: relative;
     margin-bottom: 200px;
+    margin-top: auto;
 
 
     animation-name: banner;
@@ -73,3 +62,23 @@ div section{
     animation-iteration-count: infinite;
 
 }
+
+
+.Grid__Container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+h4{
+    margin-top: 20px;
+}
+
+.redes {
+    grid-column: span 1;
+}
+
+/**.redes {
+    margin-inline-end: 400px;
+    margin-block-start: 100px;
+}**/

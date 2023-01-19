@@ -3,99 +3,262 @@
         background-image: url(../assest/imagenes/backgroundnegro.jpg);
     }
 
-}
-
-@media screen and (max-width: 480px) {
     ul {
         display: flex;
         flex-direction: row;
-        width: 95%;
+        width: 90%;
     }
 
-}
+    .logo {
+        @include tamano(100px, 100px);
+    }
 
-@media screen and (max-width: 480px) {
+    div a {
+        align-items: center;
+        justify-items: center;
+    }
+
+    p iframe {
+        width: 400px;
+        height: 400px;
+        margin-left: 10px;
+        margin-top: 200px;
+    }
+
+
+
+    .conteiner-card{
+        display: grid;
+        grid-template-rows: repeat(3, 300px);
+        grid-template-columns: repeat(1, 500px);
+        margin-left: 0%;
+    }
+
+    div img {
+        display: flex;
+        position: relative;
+        @include tamano(200px, 200px)
+    }
+
+    section p {
+        font-size: 20px;
+        margin-top: 25px;
+        margin-left: 30px;
+        margin-right: 0;
+    }
+
+    .carousel-inner {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        width: 400px;
+        height: 300px;
+        margin-top: 200px;
+    }
+
     .botton {
         width: 90px;
         height: 60px;
         border-radius: 2mm;
     }
 
-}
-
-@media screen and (max-width: 480px) {
-    body h1 {
+    .titulo {
         font-size: 50px;
+        margin-left: 30px;
+        margin-right: 50px;
         text-align: center;
+        width: 70%;
     }
 
-}
-
-@media screen and (max-width: 480px) {
-    section p {
-        font-size: 25px;
-        margin-top: 25px;
-        margin-left: 25px;
-        margin-right: 0;
+    .d-block w-100 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 300px;
     }
-}
 
-@media screen and (max-width: 480px) {
-    div img {
-        margin-left: 25%;
-        justify-items: center;
-    }
-}
-
-@media screen and (max-width: 480px) {
     #grid {
         display: grid;
         grid-template-areas: "servicios"
-            "imagen-1 "
-            "descripcion-1"
-            "imagen-2"
-            "descripcion-2"
-            "imagen-3"
-            "descripcion-3"
+            "card-fade"
+            "card-platinado"
+            "card-barberia"
             "publicidad";
         grid-template-columns: 80%;
-        grid-template-rows: 40vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh;
+        grid-template-rows: 40vh 100vh 100vh 100vh 50vh;
     }
-}
 
-@media screen and (max-width: 480px) {
     .servicios {
         margin-left: 25%;
         justify-items: center;
     }
-}
 
-@media screen and (max-width: 480px) {
     .banner {
         margin-left: 25%;
         justify-items: center;
         image-resolution: auto;
     }
-}
 
-@media screen and (max-width: 480px) {
-    .carousel-item {
-    height: 300px;
-    width: 300px;;
-    position: relative;
+    .carouse-inner {
+        justify-content: center;
+        width: 40px;
     }
-}
 
-@media screen and (max-width: 480px) {
-.carouse-inner{
-    justify-content: center;
-}
-}
-
-@media (min-width: 480px) {
     .Grid__Container {
         grid-template-columns: repeat(4, 1fr);
-        margin-top: 50px;
-        margin-right: 30px;
+        margin-top: 1px;
+        margin-right: 1px;
     }
+
+    .imagen-pequena {
+        grid-column: span 4;
+        width: 50px;
+        height: 50px;
+        margin-inline-end: 44px;
+        margin-block-start: 10px;
+    }
+
+    /**.flex {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }**/
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url(../assest/imagenes/backgroundnegro.jpg);
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    
+    }
+    
+    .botton{
+        margin-left: 50px;
+    }
+
+    .logo {
+        @include tamano(100px, 100px);
+    }
+
+    div a {
+        align-items: center;
+        justify-items: center;
+    }
+
+    p iframe {
+        width: 400px;
+        height: 400px;
+        margin-left: 10px;
+        margin-top: 200px;
+    }
+
+
+
+    .conteiner-card{
+        display: grid;
+        grid-template-rows: repeat(3, 300px);
+        grid-template-columns: repeat(1, 500px);
+        margin-left: 0%;
+    }
+
+    div img {
+        display: flex;
+        position: relative;
+        @include tamano(200px, 200px)
+    }
+
+    section p {
+        font-size: 20px;
+        margin-top: 25px;
+        margin-left: 30px;
+        margin-right: 0;
+    }
+
+    .carousel-inner {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        width: 400px;
+        height: 300px;
+        margin-top: 200px;
+    }
+
+    .botton {
+        width: 90px;
+        height: 60px;
+        border-radius: 2mm;
+    }
+
+    .titulo {
+        font-size: 50px;
+        margin-left: 30px;
+        margin-right: 50px;
+        text-align: center;
+        width: 70%;
+    }
+
+    .d-block w-100 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-areas: "servicios"
+            "card-fade"
+            "card-platinado"
+            "card-barberia"
+            "publicidad";
+        grid-template-columns: 80%;
+        grid-template-rows: 40vh 100vh 100vh 100vh 50vh;
+    }
+
+    .servicios {
+        margin-left: 25%;
+        justify-items: center;
+    }
+
+    .banner {
+        margin-left: 25%;
+        justify-items: center;
+        image-resolution: auto;
+    }
+
+    .carouse-inner {
+        justify-content: center;
+        width: 40px;
+    }
+
+    .Grid__Container {
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 1px;
+        margin-right: 1px;
+    }
+
+    .imagen-pequena {
+        grid-column: span 4;
+        width: 50px;
+        height: 50px;
+        margin-inline-end: 44px;
+        margin-block-start: 10px;
+    }
+
+    /**.flex {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }**/
 }

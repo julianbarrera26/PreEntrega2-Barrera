@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>American Barber</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./scss/style.css">
     <link rel="shortcut icon" href="./assest/imagenes/logo.png">
 
 </head>
@@ -24,7 +24,7 @@
                 <li class="botton"><a href="./index.html">Inicio</a></li>
                 <li class="botton"><a href="./pages/Horario.html">Horario</a></li>
                 <li class="botton"><a href="./pages/Turnos.html">Turnos</a></li>
-                <li class="botton"><a href="./pages/Ubicacion.html">Ubicacion</a></li>
+                <li class="botton"><a href="./pages/Ubicacion.html">Ubicación</a></li>
                 <li class="botton"><a href="./pages/Contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -32,7 +32,7 @@
 
     <main>
 
-        <h1>BIENVENIDOS</h1>
+        <h1 class="titulo">BIENVENIDOS</h1>
         <section>
             <p>American Barber nace en el año 2018, este club de caballeros evoca la antigua tradición de las típicas
                 barberías Inglesas, donde el cliente disfrutaba del arte del Barbero, quien no solo ofrecía un corte
@@ -41,15 +41,21 @@
                 de los tiempos modernos demanda. Nuestra visión es crear una atmosfera de club de amigos, donde el
                 cliente pueda de manera distendida, elegir cualquiera de los servicios ofrecidos.</p>
         </section>
-        <div id="grid">
-            <h2 class="servicios">NUESTROS SERVICIOS</h2>
-            <img class="imagen-1" src="./assest/imagenes/corte de cabello.webp" alt="">
-            <img class="imagen-2" src="./assest/imagenes/barba.jpg" alt="">
+        <div class="flex" id="grid">
+            <div class="servicios"><h2 >NUESTROS SERVICIOS</h2></div>
+            <div class="card-fade">
+                <img class="imagen-1" src="./assest/imagenes/corte de cabello.webp" alt="">
+                <section class="descripcion-1">FADE</section>
+            </div>
+            <div class="card-barberia">
+                <img class="imagen-2" src="./assest/imagenes/barba.jpg" alt="">
+                <section class="descripcion-2">BARBERIA </section>
+            </div>
+            <div class="card-platinado">
             <img class="imagen-3" src="./assest/imagenes/platinado.jpg" alt="">
-            <section class="descripcion-1">FADE</section>
-            <section class="descripcion-2">BARBERIA </section>
             <section class="descripcion-3">PLATINADO</section>
-            <section class="banner"></section>
+            </div>
+            <div class="banner"></div>
         </div>
 
     </main>
@@ -57,12 +63,15 @@
 
     <footer>
         <div class="Grid__Container">
-            <div><img class="redes" src="./assest/imagenes/twitter 2.png" alt=""></div>
-            <div><img class="redes" src="./assest/imagenes/instagram (1).png" alt=""></div>
-            <div><img class="redes" src="./assest/imagenes/facebook.png" alt=""></div>
-            <div><img class="redes" src="./assest/imagenes/tik-tok.png" alt=""></div>
-            <div class="Bottom_Column">© 2017 AMERICANBARBER. Desing by Agencia Barrera</div>
+            <div class="redes"><img class="imagen-pequena"  src="./assest/imagenes/twitter 2.png" alt=""></div>
+            <div class="redes"><img class="imagen-pequena" src="./assest/imagenes/instagram (1).png" alt=""></div>
+            <div class="redes"><img class="imagen-pequena" src="./assest/imagenes/facebook.png" alt=""></div>
+            <div class="redes"><img class="imagen-pequena" src="./assest/imagenes/tik-tok.png" alt=""></div>
         </div>
+
+        <h4>© 2017 AMERICANBARBER. Desing by Agencia Barrera</h4>
+
+        
 
         <a class="botton" href="./index.html#ir-al-inicio">Ir al Inicio</a>
     </footer>

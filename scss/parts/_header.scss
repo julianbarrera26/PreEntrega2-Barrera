@@ -19,11 +19,11 @@ header {
 
 
 
-header div img {
+header div {
     height: 100%;
     width: 50%;
     border-radius: 5%;
-    padding: 5px;
+    padding: 10px;
 }
 
 ul {
@@ -55,7 +55,7 @@ form div label {
 
 
 
-section iframe {
+iframe {
     position: relative;
     margin-left: 500px;
 
@@ -87,6 +87,7 @@ footer {
 h4 {
     position: relative;
     padding: 100px;
+    margin-top: 500px;
 }
 
 .botton {
@@ -136,41 +137,3 @@ section {
     border-bottom: 5px;
 }
 
-.Grid__Container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.Bottom_Column {
-    grid-column: span 2 / span 2;
-}
-.Bottom_Column {
-    grid-column: span 4;
-}
-
-.redes {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 50px;
-}
-
-// variables:
-$breakpoint-xs: 360px;
-$breakpoint-sm: 767px;
-$breakpoint-md: 1023px;
-$breakpoint-lg: 1360px;
-
-@mixin media($media) {
-  @if $media == xs {
-    @media (max-width: $breakpoint-sm) { @content; }
-  }
-  @else if $media == sm {
-    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { @content; }
-  }
-  @else if $media == md {
-    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) { @content; }
-  }
-  @else if $media == lg {
-    @media (min-width: $breakpoint-lg) { @content; }
-  }
-}
