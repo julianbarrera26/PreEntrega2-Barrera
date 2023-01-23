@@ -1,146 +1,21 @@
-@media screen and (max-width: 480px) {
-    body {
-        background-image: url(../assest/imagenes/backgroundnegro.jpg);
-    }
-
-    ul {
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-    }
-
-    .logo {
-        @include tamano(100px, 100px);
-    }
-
-    div a {
-        align-items: center;
-        justify-items: center;
-    }
-
-    p iframe {
-        width: 400px;
-        height: 400px;
-        margin-left: 10px;
-        margin-top: 200px;
-    }
-
-
-
-    .conteiner-card{
-        display: grid;
-        grid-template-rows: repeat(3, 300px);
-        grid-template-columns: repeat(1, 500px);
-        margin-left: 0%;
-    }
-
-    div img {
-        display: flex;
-        position: relative;
-        @include tamano(200px, 200px)
-    }
-
-    section p {
-        font-size: 20px;
-        margin-top: 25px;
-        margin-left: 30px;
-        margin-right: 0;
-    }
-
-    .carousel-inner {
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        width: 400px;
-        height: 300px;
-        margin-top: 200px;
-    }
-
-    .botton {
-        width: 90px;
-        height: 60px;
-        border-radius: 2mm;
-    }
-
-    .titulo {
-        font-size: 50px;
-        margin-left: 30px;
-        margin-right: 50px;
-        text-align: center;
-        width: 70%;
-    }
-
-    .d-block w-100 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 300px;
-        height: 300px;
-    }
-
-    #grid {
-        display: grid;
-        grid-template-areas: "servicios"
-            "card-fade"
-            "card-platinado"
-            "card-barberia"
-            "publicidad";
-        grid-template-columns: 80%;
-        grid-template-rows: 40vh 100vh 100vh 100vh 50vh;
-    }
-
-    .servicios {
-        margin-left: 25%;
-        justify-items: center;
-    }
-
-    .banner {
-        margin-left: 25%;
-        justify-items: center;
-        image-resolution: auto;
-    }
-
-    .carouse-inner {
-        justify-content: center;
-        width: 40px;
-    }
-
-    .Grid__Container {
-        grid-template-columns: repeat(4, 1fr);
-        margin-top: 1px;
-        margin-right: 1px;
-    }
-
-    .imagen-pequena {
-        grid-column: span 4;
-        width: 50px;
-        height: 50px;
-        margin-inline-end: 44px;
-        margin-block-start: 10px;
-    }
-
-    /**.flex {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-    }**/
-}
-
 @media screen and (max-width: 768px) {
     body {
         background-image: url(../assest/imagenes/backgroundnegro.jpg);
     }
 
-    ul {
+    .redes {
+        margin-inline-end: 100px;
+        margin-block-start: 100px;
+        justify-items: center;
+    }
+
+    nav ul {
         display: flex;
         flex-direction: row;
-        width: 100%;
-    
+        width: 80%
     }
-    
-    .botton{
+
+    .botton {
         margin-left: 50px;
     }
 
@@ -162,34 +37,44 @@
 
 
 
-    .conteiner-card{
+    .conteiner-card {
         display: grid;
         grid-template-rows: repeat(3, 300px);
         grid-template-columns: repeat(1, 500px);
-        margin-left: 0%;
+        margin-left: 100px;
+    }
+
+    .imagen-app {
+        @include tamano(200px, 200px)
     }
 
     div img {
         display: flex;
         position: relative;
-        @include tamano(200px, 200px)
+        @include tamano(100px, 100px)
     }
 
     section p {
         font-size: 20px;
         margin-top: 25px;
         margin-left: 30px;
-        margin-right: 0;
+        margin-right: 50px;
     }
 
-    .carousel-inner {
+    .d-block {
+        width: 500px;
+        height: 500px;
+    }
+
+
+    /**.carousel-inner {
         display: flex;
         justify-items: center;
         align-items: center;
         width: 400px;
         height: 300px;
         margin-top: 200px;
-    }
+    }**/
 
     .botton {
         width: 90px;
@@ -199,18 +84,19 @@
 
     .titulo {
         font-size: 50px;
-        margin-left: 30px;
+        margin-left: 80px;
         margin-right: 50px;
         text-align: center;
         width: 70%;
     }
 
-    .d-block w-100 {
+    .d-block {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 300px;
         height: 300px;
+        margin-right: 150px;
     }
 
     #grid {
@@ -235,9 +121,9 @@
         image-resolution: auto;
     }
 
-    .carouse-inner {
+    .carouse-item {
         justify-content: center;
-        width: 40px;
+        margin-right: 400px;
     }
 
     .Grid__Container {
@@ -254,11 +140,142 @@
         margin-block-start: 10px;
     }
 
-    /**.flex {
+    .conteiner-center {
+        margin-left: 60px;
+        margin-right: 10px;
+        height: 100px;
+    }
+
+    .text-turno{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+        background-color: #E8FF4F;
+        font-size: 50px;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-image: url(../assest/imagenes/backgroundnegro.jpg);
+    }
+
+    nav ul {
         display: flex;
         flex-direction: row;
-        position: relative;
-        justify-content: center;
+        width: 90%;
+    }
+
+    .logo {
+        @include tamano(100px, 100px);
+    }
+
+    div a {
         align-items: center;
+        justify-items: center;
+    }
+
+    p iframe {
+        width: 400px;
+        height: 400px;
+        margin-left: 10px;
+        margin-top: 200px;
+    }
+
+    .redes {
+        margin-inline-end: 30px;
+        margin-block-start: 30px;
+    }
+
+
+    .conteiner-card {
+        display: grid;
+        grid-template-rows: repeat(3, 300px);
+        grid-template-columns: repeat(1, 500px);
+        margin-left: 0%;
+    }
+
+    div img {
+        display: flex;
+        position: relative;
+        @include tamano(200px, 200px)
+    }
+
+    section p {
+        font-size: 20px;
+        margin-top: 25px;
+        margin-left: 30px;
+        margin-right: 0;
+    }
+
+    .carouse-item {
+        justify-content: center;
+        margin-right: 1000px;
+    }
+
+    .botton {
+        border-radius: 2mm;
+        margin-left: 0px;
+    }
+
+    .titulo {
+        font-size: 50px;
+        margin-left: 30px;
+        margin-right: 50px;
+        text-align: center;
+        width: 70%;
+    }
+
+    .d-block {
+        width: 300px;
+        height: 300px;
+        margin-right: 1000px;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-areas: "servicios"
+            "card-fade"
+            "card-platinado"
+            "card-barberia"
+            "publicidad";
+        grid-template-columns: 80%;
+        grid-template-rows: 40vh 100vh 100vh 100vh 50vh;
+    }
+
+    .servicios {
+        margin-left: 25%;
+        justify-items: center;
+    }
+
+    .banner {
+        margin-left: 25%;
+        justify-items: center;
+        image-resolution: auto;
+    }
+
+    /**.carouse-inner {
+        justify-content: center;
+        width: 40px;
     }**/
+
+    .Grid__Container {
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 1px;
+        margin-right: 1px;
+    }
+
+    .imagen-pequena {
+        grid-column: span 4;
+        width: 50px;
+        height: 50px;
+        margin-inline-end: 44px;
+        margin-block-start: 10px;
+    }
+
+    .text-turno{
+        font-size: 40px;
+    }
 }

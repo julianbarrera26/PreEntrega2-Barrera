@@ -67,18 +67,27 @@ div section {
 .Grid__Container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    width: 80%;
 
 }
 
 h4{
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .redes {
     grid-column: span 1;
 }
 
-/**.redes {
-    margin-inline-end: 400px;
+.imagen-pequena{
+    @include tamano(300px, 300px)
+}
+.redes {
+    margin-inline-end: 200px;
     margin-block-start: 100px;
-}**/
+}
+
+.imagen{
+    border: solid 5px black ;
+    @include tamano(250px, 250px)
+}

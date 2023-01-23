@@ -1,3 +1,23 @@
 body {
     background-image: url(../assest/imagenes/barberia.jpg);
 }
+
+.conteiner-center{
+    width: 80%;
+    justify-content: center;
+    margin-left: 150px;
+    margin-top: 200px;
+}
+
+.text-turno{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #E8FF4F;
+}
+
+.d-block{
+    width: 1000px;
+    height: 1000px;
+}
